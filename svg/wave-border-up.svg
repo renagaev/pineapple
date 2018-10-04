@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg"  style="isolation:isolate"
+     viewBox="-1.5 630.5 1363 159" preserveAspectRatio="none">
+    <defs>
+        <clipPath id="_clipPath_sKVygX6qQeloB2ea6cYCoiBbTSLj7p3W">
+            <rect width="1360" height="4000"/>
+        </clipPath>
+
+        <linearGradient id="gradient">
+            <stop offset="0%" style="stop-color: #40FDEC"></stop>
+            <stop offset="100%" style="stop-color: #2DA8FF"></stop>
+        </linearGradient>
+    </defs>
+    <g clip-path="url(#_clipPath_sKVygX6qQeloB2ea6cYCoiBbTSLj7p3W)">
+        <path fill="url(#gradient)" d="M 1360 788 L 1360 632 L 0 632 L 0 788 Q 202 662.854 680 666 Q 1158 669.146 1360 788 Z"/>
+    </g>
+</svg>
