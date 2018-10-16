@@ -15,6 +15,9 @@ body {
     font-weight: 700;
     text-align: center;
 }
+.normal-text{
+    font-weight: normal;
+}
 h1{
     font-size: 96px;
     margin: 10px;
@@ -23,8 +26,12 @@ h2{
     font-size: 72px;
     margin: 10px;
 }
+h3{
+    font-size: 36px;
+    margin: 10px;
+}
 h4{
-    font-size: 28px;
+    font-size: 23px;
     margin: 10px;
 }
 .left-align{
@@ -55,7 +62,9 @@ h4{
     margin: -2px;
     padding: -1px;
 }
-
+.big-block{
+    height: calc(var(--block-height) + 150px);
+}
 .svg-top-corner {
     position: absolute;
     top: 0;
@@ -78,7 +87,7 @@ button{
     height: 40px;
     width: 170px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-
+    margin-bottom: 10px;
 }
 .button-text{
     font-size: 18px;
@@ -123,11 +132,25 @@ button{
 }
 
 .why-card{
-    background-color: grey;
     grid-row: 3/6;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 3fr 1fr 3fr;
+}
+.center-align{
+    justify-self: center;
+    align-self: center;
+}
+.pen-type{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 275px;
+    border: 6px solid #2DA8FF;
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.5);
 }
 #why-card-1{
     grid-column: 2/4;
@@ -137,4 +160,26 @@ button{
 }
 #why-card-3{
     grid-column: 6/8;
+}
+
+#pen-type-1{
+    grid-column: 2/4;
+    grid-row: 3/6;
+}
+
+#pen-type-2 {
+    grid-column: 4/6;
+    grid-row: 3/6;
+}
+
+#pen-type-3 {
+    grid-column: 6/8;
+    grid-row: 3/6;
+}
+
+#types-text{
+    grid-column: 1/9;
+    grid-row: 2;
+    justify-self: center;
+    align-self: start;
 }
