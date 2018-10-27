@@ -31,14 +31,21 @@ li{
     height: 600px;
 }
 
-#two-block{
-    margin-top: 70px;
+#rewiews-label{
+    grid-row: 2;
     color: white;
 }
 
-#comment{
-    font-size: 25px;
-    color: white;
+
+#com-1{
+    grid-row: 3;
+}
+#com-2{
+    grid-row: 4;
+}
+
+#com-3{
+    grid-row: 5;
 }
 
 p .com-text{
@@ -53,7 +60,7 @@ input{
     margin-bottom: 25px;
     border-radius: 20px;
     padding-left: 20px;
-    background: linear-gradient(90deg, #32c5cd, #2ba2d5);
+    background: rgba(0,0,0,0.1);
     color: #d5edf7;
     border: none;
 }
@@ -65,7 +72,7 @@ select{
     font-size: 20px;
     border-radius: 20px;
     padding-left: 20px;
-    background: linear-gradient(90deg, #2ba2d5, #32c5cd);
+    background: rgba(0,0,0,0.1);
     color: #d5edf7;
     border: none;
 }
@@ -73,9 +80,7 @@ select{
 label{
     text-align: left;
     font-size: 14px;
-    text-align: left;
     color: #c2eefd;
-
 }
 
 form{
@@ -92,7 +97,7 @@ form{
 }
 
 :root {
-    --block-height: 90vh;
+    --block-height: 600px;
 }
 * {
     font-family: Roboto,sans-serif;
@@ -163,6 +168,7 @@ div.main-block > div{
     height: calc(var(--block-height) + 150px);
 }
 #svg-top-corner {
+    height: 120px;
     grid-row: 1;
     grid-column: 1;
 }
@@ -174,8 +180,10 @@ div.main-block > div{
 }
 
 .pen-image{
-    display: block;
-    margin:auto;
+    justify-self: center;
+    align-self: end;
+    width: 800px;
+
 }
 .text {
     font-family: Roboto, sans-serif;
@@ -195,12 +203,14 @@ button{
     margin: auto;
 }
 #first-svg{
+    height: 65px;
     grid-column: 0/1;
 }
 #pen{
     grid-column: 0/1;
     grid-row: 4/6;
-    align-self: center;
+    align-self: end;
+
 }
 
 #first-text{
@@ -225,10 +235,11 @@ button{
     z-index: 1;
 }
 #second-svg{
+    height: 65px;
     grid-row: 6;
     grid-column: 0/1;
     transform: rotate(180deg);
-
+    align-self: end;
 }
 
 #second-text{
@@ -242,19 +253,32 @@ button{
     display: flex;
     justify-content: center;
 }
+
+.why-cards{
+    grid-column: 0/1;
+    grid-row: 3/5;
+    display: flex;
+    justify-content: center;
+}
 .why-card{
     width: 275px;
+    height: 200px;
     margin: 30px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 3fr 1fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.why-icon{
+    align-self: center;
+    justify-self: center;
 }
 .center-align{
     justify-self: center;
     align-self: center;
 }
 .pen-type{
-    margin: 30px;
+    margin: 0px 30px 0px 30px;
     padding: 10px;
     display: grid;
     grid-template-rows: 1fr 2fr 1fr 1fr;
