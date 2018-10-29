@@ -36,15 +36,22 @@ li{
     color: white;
 }
 
+.comment{
+
+    margin-left: 300px;
+}
 
 #com-1{
+    justify-self: start;
     grid-row: 3;
 }
 #com-2{
+    justify-self: start;
     grid-row: 4;
 }
 
 #com-3{
+    justify-self: start;
     grid-row: 5;
 }
 
@@ -298,7 +305,9 @@ div.pen-type > button{
     justify-self: center;
     align-self: end;
 }
-
+.main-form{
+    height: var(--block-height);
+}
 #text{
     font-size: 20px;
 }
