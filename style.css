@@ -8,7 +8,7 @@ body {
 }
 
 
-ul {
+ul.top-menu {
     list-style: none;
     margin-top: 0;
     padding-left: 0;
@@ -320,10 +320,27 @@ div.pen-type > button{
 }
 
 footer{
-    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    height: 300px
 }
 
-#img-footer{
-    padding-right: 1100px;
-    padding-top: 140px;
+#podval-seti{
+    font-size: 20px;
+}
+
+.img-podval{
+    width: 30px;
+    height: 30px;
+}
+
+
+#menu-footer li{
+    display: block;
+    list-style-type: disc;
+    text-align: left;
+}
+
+#karta{
+    font-size: 22px;
 }
