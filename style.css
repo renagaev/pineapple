@@ -99,7 +99,7 @@ form{
     background: #ffe500;
     text-align: center;
     margin-top: 40px;
-    height: 30px;
+    height: 50px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
@@ -306,6 +306,7 @@ div.pen-type > button{
     align-self: end;
 }
 .main-form{
+    margin: 0px;
     height: var(--block-height);
 }
 #text{
@@ -322,7 +323,7 @@ div.pen-type > button{
 footer{
     display: flex;
     justify-content: space-around;
-    height: 300px
+    height: 220px
 }
 
 #podval-seti{
@@ -332,6 +333,19 @@ footer{
 .img-podval{
     width: 30px;
     height: 30px;
+}
+
+.top-svg{
+    height: 100%;
+    width: 100%;
+    grid-column: 1;
+    grid-row: 1;
+}
+.bottom-svg{
+    height: 100%;
+    width: 100%;
+    grid-column: 1;
+    grid-row: 6;
 }
 
 
